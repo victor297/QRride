@@ -1,0 +1,244 @@
+/* body * {
+  color:black;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+i {
+  color:black;
+} */
+
+/* The one i pasted  */
+html *{
+  
+ color: #3fba96;
+}
+body{
+  padding-right: 0px !important;
+}
+.App{
+  background-color: #131313;
+
+  
+}
+.welcomuser{
+  padding-left: 100px !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+/*===== Fonts =====*/
+:root{
+  --body-font: 'Hind Siliguri', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+
+/*==== Colors =====*/
+
+:root{
+  --first-color: #3fba96;
+  --second-color: #ffffff;
+  --third-color: #131313;
+  --fourth-color: #1f735a;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --useful-font-size: 1.1rem;
+    --medium-font-size: 1.3rem;
+  }
+}
+
+/*===== Margins =====*/
+:root{
+  --mb-0: -1rem;
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  --mb-7: 5rem;
+}
+
+/*===== Paddings =====*/
+:root{
+  --pd: 0.5rem;
+  --pd-1: 0.75rem;
+  --pd-2: 1rem;
+  --pd-3: 1.5rem;
+  --pd-4: 2rem;
+  --pd-5: 2.5rem;
+  --pd-6: 3rem;
+  --pd-7: 6rem;
+}
+
+/*===== z index =====*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  background: #131313;
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--third-color);
+}
+
+/*===== Navar =====*/
+/* 
+#navbar{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pd-6);
+}
+
+#navbar ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.btn{
+  padding: var(--pd-1) var(--pd-6);
+  background: var(--first-color);
+  font-size: var(--normal-font-size);
+  color: var(--second-color); 
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--fourth-color);
+}
+
+#navlist{
+
+  margin-right: var(--mb-6);
+}
+
+.link{
+  text-decoration: none;
+  font-size: var(--useful-font-size);
+  color: var(--third-color);
+}
+
+.link:hover{
+  color: var(--first-color);
+} */
+
+/*===== Home =====*/
+
+section{
+  display: flex !important;
+  justify-content: space-between;
+  margin: var(--mb-6);
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  background-color: #131313;
+}
+
+.textContainer h2{
+  color: var(--first-color);
+  font-weight: bold;
+  color: #3fba96;
+}
+
+.textContainer h1{
+  font-size:xx-large;
+  font-weight: bolder;
+  margin: 0;
+  color: #3fba96;
+}
+
+.textContainer p{
+  font-size: var(--medium-font-size);
+  width: 550px;
+  color: #3fba96;
+}
+
+.textContainer input{
+  padding: var(--pd-1) var(--pd-7) var(--pd-1) var(--pd-1);
+  font-size: var(--useful-font-size);
+}
+
+.textContainer button{
+  padding: var(--pd-2) var(--pd-6);
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.imgContainersam img{
+  width: 520px;
+  margin-top: var(--mb-0);
+}
+
+.mainImg img{
+  width: 550px;
+  /* margin-top: var(--mb-7); */
+}
+
+@media screen and (max-width: 1200px) {
+  .imgContainersam img{
+    width: 420px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .imgContainersam img{
+    display: none;
+  }
+  .textContainer p{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .textContainer input{
+    padding: var(--pd-1);
+    font-size: var(--normal-font-size);
+  }
+  
+  .textContainer button{
+    padding: var(--pd-1)
+  }
+}
+
+/*==== About =====*/
+
+.aboutText{
+  margin-top: var(--mb-7);
+} 
+
+.aboutText button{
+  border-radius: 5px;
+}
